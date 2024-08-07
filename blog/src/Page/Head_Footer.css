@@ -1,0 +1,11 @@
+header{
+    height: 100px;
+}
+
+header > .logo{
+    margin: 0 20px;
+}
+
+footer{
+    height: 100px;
+}
