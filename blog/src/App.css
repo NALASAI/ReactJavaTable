@@ -3,9 +3,10 @@ body{
   height: auto;
 }
 
+/* 헤더 */
+
 header{
   width: 80%;
-  height: 105px;
   margin: 0 auto;
 
   background-color: cadetblue;
@@ -62,24 +63,81 @@ header{
   border-width: 1px 0 1px 0;
 }
 
-.menu_bar > ul, li{
+.menu_bar > ul, .menu_bar > ul > li{
   float: left;
 
   color: white;
   list-style: none;
 }
 
-.menu_bar li{
-  margin: 0 10px;
-}
+.menu_bar li{ margin: 0 10px; }
+
+/* 메인페이지 */
 
 main{
-  height: 500px;
+  min-width: 480px;
+  width: 80%;
+
+  margin: 10px auto;
+  display: flex;
 }
+
+.MainContents{
+  width: 68%;
+  height: auto;
+  min-height: 600px;
+
+  background-color: rgb(135, 219, 219);
+}
+
+.login_sub_Mn{
+  width: 30%;
+  height: auto;
+  min-height: 600px;
+
+  background-color: rgb(230, 154, 41);
+  margin-left: 2%;
+}
+
+#blog_Text{ 
+  display: inline-block;
+
+  width: 100%;
+};
+
+#t_list > li{ border-top: 1px solid black; }
+
+/* #t_list > li:first-child{ border : none} ; */
+
+#t_item{
+  width: 600px;
+  height: 30px;
+
+  border-top: 1px solid black;
+  list-style: none; 
+}
+
+#t_item a{
+  text-decoration: none;
+
+  display: flex;
+}
+
+#item_img, #item_title, #item_impo {margin: 0 10px;}
+
+#item_impo{ display: flex; }
+
+/* 하단메뉴 */
 
 footer{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 200px;
+  justify-content: space-around;
+
+  background-color: rgb(152, 193, 255);
+
+  width: 80%;
+  height: 50px;
+
+  margin: 0 auto;
 }
